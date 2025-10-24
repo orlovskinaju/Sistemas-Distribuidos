@@ -6,7 +6,7 @@ public class Cliente {
     public static void main(String[] args) {
         try {
             Scanner sc = new Scanner(System.in);
-            Registry registry = LocateRegistry.getRegistry("localhost"); // substitua pelo IP do servidor se necessário
+            Registry registry = LocateRegistry.getRegistry("localhost"); 
             Calculadora calc = (Calculadora) registry.lookup("Calculadora");
 
             System.out.println("=== Cliente RPC Interativo ===");
